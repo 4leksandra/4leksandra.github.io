@@ -9,4 +9,48 @@ html{
 }
 body{
     height: 100%;
+    background-color: #f9f9f9;
 }
+/* End default */
+
+/* NAV BAR */
+.nav-bar{
+    position: fixed;
+    width: 100%;
+    height: 56px;
+    background-color: white;
+}
+
+nav{
+    position: relative;
+
+}
+
+.hamburger, .logo, .search{
+    position: absolute;
+}
+
+.hamburger{
+width: 38px;
+ padding-top: 22px;
+ padding-left: 20px;
+ left: 7px;
+}
+
+.logo{
+    margin-top: 19px;
+    margin-left: 20px;
+    left: 52px;
+    height: auto;
+    width: 79px;
+}
+
+.search{
+    margin-top: 0;
+    margin-left: 20px;
+    width: 983px;
+    top: 0;
+    right: 16px;
+}
+
+/* END NAV BAR */
