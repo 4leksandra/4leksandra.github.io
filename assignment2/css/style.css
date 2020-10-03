@@ -10,11 +10,23 @@ html{
 body{
     height: 100%;
     background-color: #f9f9f9;
+    font-family: 'Roboto', sans-serif;
 }
+
+.red-text{
+    color: #FF0000;
+}
+
+p{
+    text-align: center;
+    color: #606060;
+}
+
 /* End default */
 
 /* NAV BAR */
 .nav-bar{
+    z-index: 2;
     position: fixed;
     width: 100%;
     height: 56px;
@@ -54,3 +66,164 @@ width: 38px;
 }
 
 /* END NAV BAR */
+
+/* SIDE BAR */
+.side-nav{
+    position: relative;
+    padding-top: 73.5px;
+    width: 72px;
+    background-color: white;
+    height: 100%;
+    font-size: 10px;
+}
+/* Seperating elements from each other */
+.side-nav p{
+    padding-bottom: 23px;
+}
+/* Default icon size + padding-bottom */
+.side-nav div img{
+    width: 20px;
+    margin-bottom: 8px;
+}
+/* Spacing between icon and text */
+.side-nav div{
+    margin-bottom: 6px;
+}
+
+/*  Each element of side nav + hovered options */
+
+#home{
+    background: url(../images/home.png) no-repeat center;
+    background-size: 20px;
+    width: 50px;
+    height: 27.5px;
+}
+
+/* When hovered */
+.side-nav a:hover #home, .side-nav a:hover #home p {
+    background: url(../images/home1.png) no-repeat center;
+    background-size: 20px;
+    width: 50px;
+    height: 27.5px;
+}
+
+.side-nav a:hover div p{
+    color: #FF0000;
+}
+
+/* When it's the homepage */
+#home.active-icon{
+    background: url(../images/home1.png) no-repeat center;
+    background-size: 20px;
+    width: 50px;
+    height: 27.5px;
+}
+
+
+#trending{
+    background: url(../images/trending.png) no-repeat center;
+    background-size: 14px;
+    width: 14px;
+    height: 27.5px;
+}
+
+/* When hovered */
+.side-nav a:hover #trending {
+    background: url(../images/trending1.png) no-repeat center;
+    background-size: 14px;
+    width: 14px;
+    height: 27.5px;
+}
+
+
+#subscriptions{
+    background: url(../images/subscriptions.png) no-repeat center;
+    background-size: 17px;
+    width: 17px;
+    height: 27.5px;
+}
+
+.side-nav a:hover #subscriptions {
+    background: url(../images/subscriptions1.png) no-repeat center;
+    background-size: 17px;
+    width: 17px;
+    height: 27.5px;
+}
+
+
+#library{
+    background: url(../images/library.png) no-repeat center;
+    background-size: 20.5px;
+    width: 20.5px;
+    height: 27.5px;
+}
+
+.side-nav a:hover #library{
+    background: url(../images/library1.png) no-repeat center;
+    background-size: 20.5px;
+    width: 20.5px;
+    height: 27.5px;
+}
+
+
+#analytics{
+    background: url(../images/Analytics.png) no-repeat center;
+    background-size: 22px;
+    width: 22px;
+    height: 27.5px;
+}
+
+.side-nav a:hover #analytics{
+    background: url(../images/Analytics1.png) no-repeat center;
+    background-size: 22px;
+    width: 22px;
+    height: 27.5px;
+}
+
+/* When it's the homepage */
+#analytics.active-icon{
+    background: url(../images/Analytics1.png) no-repeat center;
+    background-size: 22px;
+    width:22px;
+    height: 27.5px;
+}
+
+#break{
+    background: url(../images/break.png) no-repeat center;
+    background-size: 22px;
+    width: 22px;
+    height: 27.5px;
+}
+
+.side-nav a:hover #break{
+    background: url(../images/break1.png) no-repeat center;
+    background-size: 22px;
+    width: 22px;
+    height: 27.5px;
+}
+
+/* When it's the homepage */
+#break.active-icon{
+    background: url(../images/break1.png) no-repeat center;
+    background-size: 22px;
+    width:22px;
+    height: 27.5px;
+}
+
+
+
+.side-nav a, .side-nav center, .side-nav center div{
+    height: 100%;
+}
+
+.side-nav a:link, .side-nav a:link div{
+    text-decoration: none;
+}
+
+
+.side-nav a:visited{
+    text-decoration: none;
+}
+
+
+/* END SIDE BAR */
