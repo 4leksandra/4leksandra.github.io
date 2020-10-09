@@ -17,6 +17,10 @@ body{
     color: #FF0000;
 }
 
+.white-text{
+    color: white;
+}
+
 p{
     text-align: center;
     color: #606060;
@@ -75,7 +79,14 @@ width: 38px;
     background-color: white;
     height: 100%;
     font-size: 10px;
+    float: left;
 }
+/* Side nav on break page */
+
+.onBreak{
+    position: relative;
+}
+
 /* Seperating elements from each other */
 .side-nav p{
     padding-bottom: 23px;
@@ -221,7 +232,7 @@ width: 38px;
 main{
     width: 100%;
     height: 100%;
-    padding-top: 30vh;
+    padding-top: 20vh;
     text-align: center;
 }
 
@@ -231,7 +242,7 @@ h1{
 }
 
 .filter-box{
-    margin-top: 50px;
+    margin-top: 30px;
     width: 350px;
     height: 350px;
     background-image: url(../images/filters.png);
@@ -284,19 +295,20 @@ h1{
 
 .start{
     position: fixed;
-    padding: 13px;
+    padding: 10px;
     bottom: 0;
     left: 0;
     z-index: 10;
     background-color: #FF0000;
     width: 100%;
-    height:56px;
+    height:40px;
     color: white;
     text-align: center;
 }
 
 .start h2{
     color: white;
+    font-size: 20px;
 }
 
 /* END START BAR */
@@ -366,3 +378,16 @@ h3{
 }
 
 /* END ANALYTICS PAGE */
+
+/* START BREAK PLAYER AND PLAYLIST */
+
+.breakplayer {
+    overflow: hidden;
+    max-height: 100%;
+    height: auto;
+
+}
+
+tbody{
+    vertical-align: top;
+}
