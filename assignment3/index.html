@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WAR - Card Game</title>
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- import the webpage's javascript file -->
+    <script src="script/script.js" defer></script>
+  </head>
+
+  <body>
+  <!--  How to play section   -->
+    <div id="how-to-play">
+    <h1>WAR</h1>
+    <h2>How To Play</h2>
+    <p>
+      The game is simple. Draw one card and compare it against the computer's.
+      Highest card wins, and winner takes both cards. Play until one person has
+      all of the cards.
+    </p>
+    <p>
+      In the event of a tie, THERE WILL BE WAR. Three cards will be drawn from
+      each deck (if available) and the fourth card from each will be compared.
+      Highest card wins. Winner takes all 8 cards.
+    </p>
+    <button id="playButton" onclick="play()">PLAY!</button> 
+    </div>
+    
+    <!-- Game section   -->
+    <!-- Image of card, count of deck -->
+    <div id="game" style="display: none;">
+      <div id="section1">
+      <h2 id="text1"></h2><p id="cardsleft1"></p>
+      <img id="card1" width="200px" src="images/back.png">
+     </div>
+      
+      <div class="clearfix">
+    <button id="deal" onclick="deal()">DEAL</button>
+    <button id="newgame" onclick="window.location.reload();">MAIN MENU</button>
+
+      </div>
+    <!-- Image of card, count of deck -->
+      <div id="section2">
+        
+      <h2 id="text2"></h2><p id="cardsleft2"></p>
+    <img id="card2" width="200px" src="images/back.png">
+    </div>
+    
+    </div>
+    
+  </body>
+</html>
