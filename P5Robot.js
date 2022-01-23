@@ -104,7 +104,7 @@ var robotP5 = function(a) {
                     //  if (keyTyped === true && (keyCode == false)) {
                     a.backgroundSetup();
                     a.fill(109, 21, 240);
-                    switch (key) {
+                    switch (a.key) {
                         case "A":
                         case "a":
                             a.drawSpeechBubble("Alpha");
