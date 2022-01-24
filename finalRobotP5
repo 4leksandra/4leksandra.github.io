@@ -101,7 +101,7 @@ var robotP5 = function(a) {
 
                 // If key is pressed and isn't a coded key, get the key and display the word corresponding to the letter
                 if (a.keyIsPressed === true && a.keyCode !== 37 && a.keyCode !== 39) {
-                    //  if (keyTyped === true && (keyCode == false)) {
+                    //  if (a.keyIsPressed === true) {
                     a.backgroundSetup();
                     a.fill(109, 21, 240);
                     switch (a.key) {
