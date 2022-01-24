@@ -56,13 +56,13 @@ var robotP5 = function(a) {
                 var messageX = a.width / 2;
                 var messageY = y - 90;
                 a.strokeWeight(3);
-                a.strokeCap(ROUND);
+                a.strokeCap(a.ROUND);
                 //stroke(109, 21, 240);
                 a.fill(109, 21, 240);
                 //rect(x-100-10, y-60-10, 100, 50, roundCorners);
                 a.textSize(60);
                 //fill(0);
-                a.textAlign(CENTER);
+                a.textAlign(a.CENTER);
                 a.text(message, messageX, messageY);
                 //   prvarln(message);
             }
@@ -247,7 +247,7 @@ var robotP5 = function(a) {
                 //foot
                 a.fill(19, 42, 152);
                 footRadius = 150;
-                //ellipse(width/2, height -(footRadius/2 +5), footRadius, footRadius);
+                //ellipse(a.width/2, a.height -(footRadius/2 +5), footRadius, footRadius);
                 a.ellipse(
                     x + headWidth / 2,
                     a.height - (footRadius / 2 + 5),
