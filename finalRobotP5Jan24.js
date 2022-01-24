@@ -301,13 +301,9 @@ var robotP5 = function(a) {
                         a.width / 2 - 300,
                         a.height - a.height + 250
                     );
+                  
                     a.text(
-                        "3. The console logs all the corresponding words to your letter",
-                        a.width / 2 - 300,
-                        a.height - a.height + 300
-                    );
-                    a.text(
-                        "4. Click for instructions again",
+                        "3. Click for instructions again",
                         a.width / 2 - 300,
                         a.height - a.height + 350
                     );
